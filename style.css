@@ -84,24 +84,3 @@ ul {
   justify-content: center;
   align-items: right;
 }
-
-
-@media (min-width: 445px) and (max-width: 1025px) {
-  
-  .container {
-    height: 40%;
-    width: 45%;
-    opacity: calc();
-  }
-
-
-  @keyframes timeScale {
-    from 0%{
-      animation-duration: color 4s linear 0.4s infinite;
-    }
-
-    100% {
-      
-    }
-  }
-}
