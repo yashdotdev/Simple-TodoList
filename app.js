@@ -28,7 +28,6 @@ btn.addEventListener("click", function () {
 */
 
 
-
 ul.addEventListener("click", function (event) {
   // console.log(event.target);
   // console.dir(event.target);
@@ -41,19 +40,3 @@ ul.addEventListener("click", function (event) {
   }
 });
 
-
-
-
-
-
-// using this event listener we are unable to delete the newly added tasks
-
-// let delBtns = document.querySelectorAll(".delete");
-
-// for (const delBtn of delBtns) {
-//   delBtn.addEventListener("click", function () {
-//     let par = this.parentElement;
-//     console.log(par);
-//     par.remove();
-//   });
-// }
