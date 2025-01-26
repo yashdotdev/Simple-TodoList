@@ -1,0 +1,107 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #031324;
+  color: white;
+}
+
+body {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid rgb(126, 126, 155);
+  box-shadow: 0px 4px 6px rgba(122, 126, 193, 0.7);
+}
+
+input {
+  border: 1px solid white;
+  border-radius: 7px;
+  min-width: auto;
+  min-height: auto;
+  padding: 5px;
+}
+
+input + button {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(121, 203, 121);
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+input + button:hover {
+  background-color: black;
+  color: rgb(121, 203, 121);
+  transition: 0.4s;
+}
+
+.delete {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-top: 4px;
+  padding: 3px 4px;
+  position: absolute;
+  left: 12rem;
+}
+
+.delete:hover {
+  background-color: black;
+  color: red;
+  transition: 0.4s;
+}
+
+li {
+  font-size: 0.9rem;
+  list-style: square;
+  letter-spacing: 0.5px;
+  line-height: 2rem;
+}
+
+ul {
+  padding-left: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+
+
+@media (min-width: 445px) and (max-width: 1025px) {
+  
+  .container {
+    height: 40%;
+    width: 45%;
+    opacity: calc();
+  }
+
+
+  @keyframes timeScale {
+    from 0%{
+      animation-duration: color 4s linear 0.4s infinite;
+    }
+
+    100% {
+      
+    }
+  }
+}
