@@ -1,0 +1,106 @@
+/* Default styles — already set for desktop view */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  input {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  button {
+    height: 2.2rem;
+    width: 4rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  input {
+    width: 60%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .add {
+    font: 1rem;
+    padding: 0;
+    margin-left: 1rem;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .delete {
+    font-size: 1rem;
+    height: auto;
+    width: auto;
+    margin: 0;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+  }
+
+  input {
+    width: 60%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .add {
+    font: 1rem;
+    padding: 0;
+    margin-left: 1rem;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .delete {
+    font-size: 1rem;
+    height: auto;
+    width: auto;
+    margin: 0;
+    justify-self: center;
+  }
+}
