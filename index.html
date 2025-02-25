@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.freepik.com/256/6972/6972727.png?semt=ais_hybrid"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <h1>Todo App</h1>
-      <input name="task" type="text" placeholder="enter your task here..." />
-      <button type="submit">Add Task</button>
 
+      <input type="text" placeholder="Add your next task..." />
+      <button class="add">Add</button>
       <ul>
-        <li>Water the plants.<button class="delete">delete</button></li>
-        <li>Go for a walk.<button class="delete">delete</button></li>
-        <li>Make a grocery list.<button class="delete">delete</button></li>
+        <li>Build the Project!<button class="delete">Delete</button></li>
+        <li>Do the taxes<button class="delete">Delete</button></li>
+        <li>Go to gym<button class="delete">Delete</button></li>
       </ul>
     </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
