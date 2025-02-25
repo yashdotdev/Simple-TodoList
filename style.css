@@ -18,7 +18,7 @@ body {
   background-color: rgb(15, 15, 36);
   width: 500px;
   text-align: center;
-  max-height: 500px;
+  max-height: 380px;
   overflow-y: auto;
   box-shadow: 0px 10px 30px rgba(122, 126, 193, 0.8);
 }
