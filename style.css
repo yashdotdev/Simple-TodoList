@@ -1,86 +1,129 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #031324;
-  color: white;
-}
-
 body {
-  height: 60%;
-  width: 100%;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 .container {
-  position: absolute;
-  top: 100px;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgb(15, 15, 36);
+  width: 500px;
   text-align: center;
-  padding: 10px 25px;
-  border-radius: 8px;
-  border: 2px solid rgb(126, 126, 155);
-  box-shadow: 0px 4px 6px rgba(122, 126, 193, 0.7);
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0px 10px 30px rgba(122, 126, 193, 0.8);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f0f5b0;
+  margin-bottom: 2rem;
 }
 
 input {
-  border: 1px solid white;
-  border-radius: 7px;
-  min-width: auto;
-  min-height: auto;
-  padding: 5px;
-}
-
-input + button {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: rgb(121, 203, 121);
+  font-size: 1.2rem;
+  width: 65%;
+  padding: 8px 8px;
+  background-color: #fcba03;
   color: black;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px;
-  margin-left: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
-input + button:hover {
-  background-color: black;
-  color: rgb(121, 203, 121);
-  transition: 0.4s;
+button {
+  border: 0px solid;
+  text-align: center;
+  height: 2rem;
+  width: 3.6rem;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .delete {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: red;
+  margin-right: 2rem;
+  font-size: 1rem;
+  height: 2rem;
+  width: 3.9rem;
   color: black;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  margin-left: 2rem;
-  margin-top: 4px;
-  padding: 3px 4px;
-  position: absolute;
-  left: 12rem;
+  background-color: #e62e00;
+  border-radius: 6px;
+  padding: 8px 8px;
+  transition: transform 0.2s ease-in-out;
 }
+
+/* .delete:hover {
+  color: #e62e00;
+  background-color: black;
+} */
 
 .delete:hover {
+  transform: scale(1.2);
   background-color: black;
-  color: red;
-  transition: 0.4s;
+  color: #e62e00;
 }
 
-li {
-  font-size: 0.9rem;
-  list-style: square;
-  letter-spacing: 0.5px;
-  line-height: 2rem;
+.add {
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: black;
+  background-color: #4afc4a;
+  transition: transform 0.2s ease-in-out;
+}
+
+.add:hover {
+  transform: scale(1.2);
+  background-color: #2ecb2e; /* Ek thoda dark green touch */
 }
 
 ul {
-  padding-left: 20px;
-  text-align: justify;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: right;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff4747;
+  margin-top: 2rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
