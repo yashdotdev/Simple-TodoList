@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgba(15, 15, 36, 0.9);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  max-height: 468px;
+  overflow-y: auto;
+  box-shadow: 0px 9px 20px rgba(122, 126, 193, 0.8);
+  transition: all 0.5s;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fafafa;
+  margin-bottom: 2rem;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 1rem;
+  width: 55%;
+  height: 40px;
+  padding: 10px 10px;
+  background-color: transparent;
+  color: #fafafa;
+  border-radius: 20px;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+
+input,
+h1,
+li {
+  transition: all 0.3s ease;
+}
+
+button {
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.add {
+  font-size: 1rem;
+  padding: 6px 6px;
+  height: 40px;
+  width: 60px;
+  margin-left: 1rem;
+  color: #000;
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
+  transition: transform 0.2s ease-in-out;
+}
+
+.add:hover {
+  background-color: #c6c6c6;
+  color: #000;
+}
+
+ul {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+li > .check {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background: none;
+  padding: 0px 12px;
+  color: #4caf50;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li > .check i {
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+
+li > span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+  opacity: 0.7;
+}
+
+.edit,
+.delete {
+  height: 40px;
+  width: 40px;
+  background: none;
+  color: #fafafa;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.edit {
+  margin-right: -12px;
+}
+
+.edit i,
+.delete i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff4747;
+  margin-top: 2rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.editable {
+  width: 100%;
+  max-width: 345px;
+  border: none;
+}
