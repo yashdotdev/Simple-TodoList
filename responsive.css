@@ -29,7 +29,7 @@
 @media (max-width: 560px) {
   .container {
     width: 100%;
-    max-width: 380px;
+    max-width: 360px;
     height: auto;
     max-height: 395px;
     padding: 10px;
