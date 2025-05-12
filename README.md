@@ -12,7 +12,7 @@ A simple and interactive **Todo List App** built with **HTML**, **CSS**, and **J
 
 ## Screenshots
 
-![Todo App Screenshot](/logo.png)
+![Todo App Screenshot](/screenshot.png)
 
 ## Installation
 
