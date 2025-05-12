@@ -87,7 +87,7 @@
 
   .editable {
     width: 100%;
-    max-width: 180px;
+    max-width: 260px;
     border: none;
   }
 }
@@ -116,7 +116,6 @@
 
   li {
     font-size: 0.7rem;
-    gap: 10px;
     text-align: center;
     padding: 0px;
     /* margin: 0; */
@@ -129,7 +128,7 @@
 
   .editable {
     width: 100%;
-    max-width: 120px;
+    max-width: 185px;
     border: none;
   }
 }
