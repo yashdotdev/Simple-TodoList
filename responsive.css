@@ -92,7 +92,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 410px) {
   .container {
     width: 100%;
     max-width: 280px;
