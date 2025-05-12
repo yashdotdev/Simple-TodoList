@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 560px) {
   .container {
     width: 100%;
     max-width: 380px;
@@ -92,7 +92,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .container {
     width: 100%;
     max-width: 280px;
