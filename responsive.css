@@ -28,7 +28,8 @@
 
 @media (max-width: 660px) {
   .container {
-    width: auto;
+    width: 100%;
+    max-width: 380px;
     height: auto;
     max-height: 395px;
     padding: 10px;
@@ -91,9 +92,10 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
   .container {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: auto;
     padding: 10px;
   }
